@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Timezone Digital Clock</title>
+    <link rel="stylesheet" href="clock-style.css">
+</head>
+<body>
+    <div class="clock-container">
+        <h1>🕐 Global Time Zone Clock</h1>
+        
+        <div class="controls">
+            <input type="text" id="cityInput" placeholder="Add a city (e.g., Tokyo, London)">
+            <button onclick="addTimezone()">+ Add City</button>
+            <button onclick="resetTimezones()" class="reset-btn">Reset</button>
+        </div>
+
+        <div class="clocks-grid" id="clocksGrid">
+            <!-- Clocks will be added here dynamically -->
+        </div>
+
+        <div class="preset-cities">
+            <h3>Quick Add:</h3>
+            <button onclick="addPresetCity('New York')">New York</button>
+            <button onclick="addPresetCity('London')">London</button>
+            <button onclick="addPresetCity('Tokyo')">Tokyo</button>
+            <button onclick="addPresetCity('Sydney')">Sydney</button>
+            <button onclick="addPresetCity('Dubai')">Dubai</button>
+            <button onclick="addPresetCity('Singapore')">Singapore</button>
+        </div>
+    </div>
+
+    <script src="clock-script.js"></script>
+</body>
+</html>
