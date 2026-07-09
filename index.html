@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Explorer - Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">∑ Math Explorer</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#fun">Math Fun</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to My Math Universe</h1>
+            <p>Exploring the beauty and logic of mathematics</p>
+            <button class="cta-btn" onclick="scrollToSection('projects')">Explore My Work</button>
+        </div>
+        <div class="math-animation">
+            <div class="rotating-shape">π</div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <p>Hi! I'm a 9th grader passionate about mathematics. I love discovering patterns, solving complex problems, and visualizing mathematical concepts. Math isn't just numbers—it's the language of the universe!</p>
+            <p class="fun-fact">🧩 Fun Fact: I can solve a Rubik's cube in under 2 minutes using mathematical algorithms!</p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2>Math Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <div class="project-icon">🔷</div>
+                <h3>Fractal Art</h3>
+                <p>Exploring infinite mathematical patterns and self-similarity in nature</p>
+            </div>
+            <div class="project-card">
+                <div class="project-icon">📊</div>
+                <h3>Data Visualization</h3>
+                <p>Creating visual representations of complex mathematical datasets</p>
+            </div>
+            <div class="project-card">
+                <div class="project-icon">🧮</div>
+                <h3>Puzzle Solver</h3>
+                <p>Solving challenging math puzzles and logic problems</p>
+            </div>
+            <div class="project-card">
+                <div class="project-icon">⚡</div>
+                <h3>Algorithm Studies</h3>
+                <p>Learning and implementing cool mathematical algorithms</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Math Fun Section -->
+    <section id="fun" class="math-fun">
+        <h2>Math Fun Facts</h2>
+        <div class="fun-grid">
+            <div class="fun-card">
+                <h3>Did You Know?</h3>
+                <p>The number π (pi) has been calculated to over 31 trillion digits, and mathematicians are still discovering more!</p>
+            </div>
+            <div class="fun-card">
+                <h3>Fibonacci in Nature</h3>
+                <p>The Fibonacci sequence appears everywhere in nature—from spiral galaxies to sunflower seeds!</p>
+            </div>
+            <div class="fun-card">
+                <h3>Prime Numbers</h3>
+                <p>Prime numbers are the "building blocks" of all numbers. The search for larger primes continues today!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Get In Touch</h2>
+        <div class="contact-content">
+            <p>Have a math problem to discuss? Want to collaborate? Reach out!</p>
+            <form class="contact-form" onsubmit="handleSubmit(event)">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 Math Explorer. Made with ❤️ and π</p>
+        <div class="social-links">
+            <a href="#">GitHub</a>
+            <a href="#">Twitter</a>
+            <a href="#">LinkedIn</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
